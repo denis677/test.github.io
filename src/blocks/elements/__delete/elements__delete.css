@@ -1,0 +1,23 @@
+.elements__delete {
+  position: absolute;
+  background-image: url(../../../images/KORZINAZINA.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  outline: none;
+  right: 5px;
+  top: 5px;
+  width: 18px;
+  height: 19px;
+  transition: 0.3s;
+  opacity: 1;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.elements__delete:hover {
+  opacity: 0.5;
+}

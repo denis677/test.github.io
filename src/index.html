@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesto</title>
+</head>
+
+<body class="page">
+  <header class="header">
+    <img class="header__logo" src="<%=require('./images/logo.svg')%>" alt="Логотип место">
+  </header>
+  <main>
+    <section class="profile">
+      <div class="profile__main">
+        <img class="profile__avatar" src="<%=require('./images/image.jpg')%>" alt="Аватар пользователя">
+        <div class="profile__info">
+          <div class="profile__title-flex">
+            <h1 class="profile__title">Жак-Ив Кусто</h1>
+            <button class="profile__edit-button" type="button"></button>
+          </div>
+          <h2 class="profile__subtitle">Исследователь океана</h2>
+        </div>
+      </div>
+      <button class="profile__button" type="button"></button>
+    </section>
+    <section class="elements">
+
+
+
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__author">&copy; 2022 Mesto Russia</p>
+  </footer>
+
+  <div class="popup profile-popup">
+    <div class="popup__container">
+      <h3 class="popup__edit-popup">Редактировать профиль</h3>
+      <form class="popup__form profile-form form" name="edit" novalidate>
+          <fieldset class="popup__form-set">
+            <label class="popup__field">
+              <input type="text" name="input-author" value="Жак-Ив Кусто" class="popup__field-author profile-field-auhtor input" required minlength="2" maxlength="40">
+
+              <span class="input-author-error input-error"></span>
+              </label>
+            <label class="popup__field">
+              <input type="text" name="input-title" value="Исследователь океана" class="popup__field-name profile-field-name input" required minlength="2" maxlength="200">
+
+              <span class="input-title-error input-error"></span>
+            </label>
+            <button class="popup__submit-button submit-button profile-submit-button" type="submit">Сохранить</button>
+      </fieldset>
+      </form>
+      <button class="popup__close profile-close" type="button"></button>
+    </div>
+  </div>
+
+  <div class="popup card-popup">
+    <div class="popup__container">
+      <h3 class="popup__edit-popup">Новое место</h3>
+      <form class="popup__form form card-form" name="new-place" novalidate>
+        <fieldset class="popup__form-set">
+          <input type="text" name="input-caption" value="" placeholder="Название" class="popup__field-author input card-field-auhtor" required minlength="2" maxlength="40">
+          <span class="input-caption-error input-error"></span>
+          <input type="url" name="input-link" value="" placeholder="Ссылка на картинку" class="popup__field-name input card-field-name" required minlength="2" maxlength="200">
+          <span class="input-link-error input-error"></span>
+          <button class="popup__submit-button submit-button card-submit-button popup__submit-button_disabled" disabled="true" type="submit">Создать</button>
+        </fieldset>
+      </form>
+      <button class="popup__close card-close" type="button"></button>
+    </div>
+  </div>
+
+  <template id="form-elements">
+          <div class="elements__element">
+        <img class="elements__mask-group" src="<%=require('./images/mask-group//kirill-pershin-1556355-unsplash.png')%" alt="картинка">
+        <div class="elements__group">
+          <h3 class="elements__title">Домбай</h3>
+          <button  class="elements__like" type="button"></button>
+        </div>
+        <button type="button" class="elements__delete"></button>
+      </div>
+  </template>
+  
+  <div class="popup image-popup">
+    <div class="image-container">
+      <button class="image-close popup__closee" type="button"></button>
+    </div>
+    <h3 class="image-edit-popup">Архыз</h3>
+  </div>
+</body>
+</html>

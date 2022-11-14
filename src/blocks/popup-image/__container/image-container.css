@@ -1,0 +1,19 @@
+.image-container {
+  position: relative;
+  width: 75vh;
+  height: 75vh;
+  background-image: url(../../../images/mask-group/kirill-pershin-1088404-unsplash.jpg);
+  background-size: cover;
+  background-position: center center;
+  opacity: 1;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+@media all and (max-width: 880px) {
+  .popup-image__container {
+    width: 240px;
+    height: 299px;
+
+  }
+}

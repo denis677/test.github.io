@@ -1,0 +1,21 @@
+.image-edit-popup {
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  margin: 0;
+  margin-top: 10px;
+  text-align: start;
+  width: 75vh;
+  
+}
+
+@media all and (max-width: 880px) {
+  .popup-image__edit-popup {
+    font-weight: 400;
+    margin-top: 10px;
+    width: 240px;
+  }
+}
